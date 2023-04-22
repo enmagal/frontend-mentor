@@ -412,7 +412,7 @@ input:where([type= "text"], [type= "email"]){
   display: grid;
   align-items: center;
   column-gap: var(--size-400);
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: min-content auto;
 }
 
 .numbered-items p {
