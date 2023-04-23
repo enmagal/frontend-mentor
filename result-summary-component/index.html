@@ -17,37 +17,51 @@
     <section>
       <div class="component">
         <div class="score bg-gradient">
-          <h1>Your Result</h1>
+          <h1 class="text-neutral-300">Your Result</h1>
           <div class="score-circle">
-            <p>76</p>
-            <p>of 100</p>
+            <p class="score-number">76</p>
+            <p class="text-neutral-300-op">of 100</p>
           </div>
-          <h2>Great</h2>
-          <p class="text-center">
-            You scored higher than 65% of the people who have taken these tests.
-          </p>
+          <div class="score-text">
+            <h2>Great</h2>
+            <p class="text-center text-neutral-300">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
         </div>
         <div class="summary">
           <h1>Summary</h1>
-          <div class="summary-result">
-            <img src="./images/icon-reaction.svg" alt="" />
-            <h2>Reaction</h2>
-            <p>80 / 100</p>
-          </div>
-          <div class="summary-result">
-            <img src="./images/icon-memory.svg" alt="" />
-            <h2>Memory</h2>
-            <p>92 / 100</p>
-          </div>
-          <div class="summary-result">
-            <img src="./images/icon-verbal.svg" alt="" />
-            <h2>Verbal</h2>
-            <p>61 / 100</p>
-          </div>
-          <div class="summary-result">
-            <img src="./images/icon-visual.svg" alt="" />
-            <h2>Visual</h2>
-            <p>72 / 100</p>
+          <div class="summary-result-group">
+            <div class="summary-result bg-primary-200">
+              <div class="category">
+                <img src="./images/icon-reaction.svg" alt="" />
+                <h2 class="text-primary-200">Reaction</h2>
+              </div>
+              <p>80 <em>/ 100</em></p>
+            </div>
+            <div class="summary-result bg-primary-100">
+              <div class="category">
+                <img src="./images/icon-memory.svg" alt="" />
+                <h2 class="text-primary-100">Memory</h2>
+              </div>
+
+              <p>92 <em>/ 100</em></p>
+            </div>
+            <div class="summary-result bg-primary-300">
+              <div class="category">
+                <img src="./images/icon-verbal.svg" alt="" />
+                <h2 class="text-primary-300">Verbal</h2>
+              </div>
+              <p>61 <em>/ 100</em></p>
+            </div>
+            <div class="summary-result bg-primary-400">
+              <div class="category">
+                <img src="./images/icon-visual.svg" alt="" />
+                <h2 class="text-primary-400">Visual</h2>
+              </div>
+              <p>72 <em>/ 100</em></p>
+            </div>
           </div>
           <button class="button">Continue</button>
         </div>
