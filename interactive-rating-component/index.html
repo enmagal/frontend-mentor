@@ -17,28 +17,49 @@
     <section>
       <div class="component">
         <!-- Rating state start -->
-        <div class="star-icon">
-          <img src="./images/icon-star.svg" alt="" />
+
+        <div class="rating-state">
+          <div class="star-icon">
+            <img src="./images/icon-star.svg" alt="" />
+          </div>
+          <div>
+            <h1>How did we do?</h1>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="rating-list">
+            <button class="rating" id="1">1</button>
+            <button class="rating" id="2">2</button>
+            <button class="rating" id="3">3</button>
+            <button class="rating" id="4">4</button>
+            <button class="rating" id="5">5</button>
+          </div>
+          <button class="primary-button | submit">Submit</button>
         </div>
-        <div>
-          <h1>How did we do?</h1>
-          <p>
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-        </div>
-        <ul class="rating-list">
-          <li><button class="rating">1</button></li>
-          <li><button class="rating">2</button></li>
-          <li><button class="rating">3</button></li>
-          <li><button class="rating">4</button></li>
-          <li><button class="rating">5</button></li>
-        </ul>
-        <button class="primary-button">Submit</button>
 
         <!-- Rating state end -->
 
         <!-- Thank you state start -->
+        <div class="thank-you-state">
+          <img src="./images/illustration-thank-you.svg" alt="" />
+          <div class="result">
+            <p>
+              You selected
+              <span id="score"></span>
+              out of 5
+            </p>
+          </div>
+
+          <div class="thanks">
+            <h1>Thank you!</h1>
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
 
         <!-- Thank you state end -->
       </div>
