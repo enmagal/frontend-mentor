@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import FaqAccordion from "./faq-accordion/FaqAccordion";
+import NewsletterSignUp from "./newsletter-sign-up/NewsletterSignUp";
 
 function MyButton() {
   return <button>I'm a button</button>;
@@ -18,6 +18,7 @@ function App() {
         <MyButton />
       </header>
       <FaqAccordion />
+      <NewsletterSignUp />
     </div>
   );
 }

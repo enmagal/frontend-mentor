@@ -58,7 +58,7 @@ function Question({ name, content, toggle, open }) {
 }
 
 function FaqAccordion(props) {
-  const [openKey, setOpenKey] = useState("1");
+  const [openKey, setOpenKey] = useState();
 
   const handleToggle = (key) => {
     setOpenKey(openKey !== key ? key : null);
