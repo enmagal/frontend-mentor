@@ -19,7 +19,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
             className="button"
-            href="bento.me/enzomagal"
+            href="https://bento.me/enzomagal"
           >
             See my Bento
           </a>
@@ -27,7 +27,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
             className="button"
-            href="bento.me/enzomagal"
+            href="https://bento.me/enzomagal"
           >
             The projects
           </a>

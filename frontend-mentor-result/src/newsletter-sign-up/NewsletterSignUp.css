@@ -73,10 +73,23 @@ p {
   margin-bottom: 0.5em;
 }
 
+.formTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .formText {
   margin-bottom: 1em;
-  height: 3em;
+  height: 3.5em;
   border: 1.5px solid var(--lightGrey);
+  border-radius: 5px;
+  padding-left: 1.5em;
+}
+
+.formTextError {
+  margin-bottom: 1em;
+  height: 3.5em;
+  border: 1.5px solid var(--tomato);
   border-radius: 5px;
   padding-left: 1.5em;
 }
@@ -87,12 +100,19 @@ p {
 
 .formSubmit {
   margin-top: 1em;
-  height: 3em;
+  height: 3.5em;
   font-family: "Roboto_700Bold";
   color: var(--white);
   background-color: var(--darkSlateGrey);
   border: 1.5px solid var(--darkSlateGrey);
   border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.formSubmit:hover {
+  background-color: var(--tomato);
+  border: 1.5px solid var(--tomato);
 }
 
 h1 {
@@ -113,4 +133,37 @@ h1 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.successCard {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  text-align: start;
+  border-radius: 25px;
+}
+
+.successCard > h1 {
+  margin-top: 0.5em;
+}
+
+.successCard > p > em {
+  font-style: normal;
+  font-family: "Roboto_700Bold";
+}
+
+.formLabels {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.error {
+  color: var(--tomato);
+}
+
+.error + .formText {
+  border-color: var(--tomato);
 }
