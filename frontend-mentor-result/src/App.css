@@ -6,6 +6,8 @@
 
 .App {
   text-align: center;
+  background-color: #0c0f0a;
+  color: #fff;
 }
 
 .App-logo {
@@ -20,7 +22,6 @@
 }
 
 .App-header {
-  background-color: #0c0f0a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,13 +44,26 @@
   }
 }
 
-.title {
+.appTitle {
   font-family: "JetBrainsMono";
   font-size: 85px;
   font-weight: 900;
-  /* color: #41ead4;
-  animation: bgColor 5s infinite linear; */
   color: #fff;
+  text-align: center;
+}
+
+.appTitle > em {
+  font-style: normal;
+  background-image: linear-gradient(
+    to right,
+    #ff206e,
+    #fbff12,
+    #41ead4,
+    #ff206e
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 90s linear infinite;
 }
 
 @keyframes rainbow-animation {
@@ -69,7 +83,7 @@
   margin: 1em;
   font-size: 32px;
   font-family: "JetBrainsMono";
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
@@ -88,19 +102,51 @@
     #41ead4,
     #ff206e
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: border-box;
   animation: rainbow-animation 90s linear infinite;
 }
 
-@keyframes bgColor {
-  33% {
-    color: #ff206e;
-  }
-  66% {
-    color: #fbff12;
-  }
-  100% {
-    color: #41ead4;
-  }
+.projectCard {
+  width: 23vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1em;
+  border: 2px solid #fff;
+  margin-bottom: 3em;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.projectCard:hover {
+  background-image: linear-gradient(
+    to right,
+    #ff206e,
+    #fbff12,
+    #41ead4,
+    #ff206e
+  );
+  -webkit-background-clip: border-box;
+  animation: rainbow-animation 90s linear infinite;
+}
+
+.projects > h2 {
+  font-family: "JetBrainsMono";
+  font-size: 40px;
+}
+
+.projectCard > h1 {
+  font-size: 1.5em;
+  font-family: "JetBrainsMono";
+  color: #fff;
+  margin-top: 0.5em;
+  text-align: start;
+}
+
+.projectRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }

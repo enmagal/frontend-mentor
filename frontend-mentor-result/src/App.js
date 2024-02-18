@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="title">
-          Here are my amazing <br /> Frontend Mentor Results{" "}
+        <h1 className="appTitle">
+          Here are my <em>Amazing</em> <br /> Frontend Mentor Results
         </h1>
         <div className="buttons">
           <a className="button" href="bento.me/enzomagal">
@@ -21,7 +21,11 @@ function App() {
       </header>
       <div className="projects">
         <h2>Projects</h2>
-        <ProjectCards />
+        <div className="projectRow">
+          <ProjectCards title="FAQ accordion" />
+          <ProjectCards title="Newsletter sign-up form with success message" />
+          <ProjectCards title="FAQ accordion" />
+        </div>
       </div>
       <FaqAccordion />
       <NewsletterSignUp />
