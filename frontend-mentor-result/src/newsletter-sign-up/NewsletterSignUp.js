@@ -126,7 +126,7 @@ function ValidateEmail(email) {
 
 function NewsletterSignUp(props) {
   const [submit, setSubmit] = useState(false);
-  const [email, setEmail] = useState("enzo.magal@gmail.com");
+  const [email, setEmail] = useState("truc");
   const [error, setError] = useState(false);
   const handleClick = () => {
     if (ValidateEmail(email)) {

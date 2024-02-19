@@ -122,7 +122,10 @@
   transition-duration: 0.3s;
   background-position: center;
   background-size: cover;
-  margin: 3vh 3vw;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+  margin-top: 3em;
 }
 
 @keyframes rotate {
@@ -167,6 +170,7 @@
   font-family: "JetBrainsMono";
   font-size: 50px;
   margin-bottom: 1em;
+  padding-top: 1em;
 }
 
 .projectCard > h1 {
@@ -182,6 +186,7 @@
   width: 100%;
   justify-content: space-evenly;
   margin-bottom: 3em;
+  flex-wrap: wrap;
 }
 
 .arrow {
@@ -191,10 +196,11 @@
   width: 40px;
 }
 
-.date {
+.releaseDate {
   font-family: "JetBrainsMono";
   font-weight: 400;
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 .socialLinks {

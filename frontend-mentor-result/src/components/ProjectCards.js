@@ -6,7 +6,8 @@ function ProjectCards(props) {
     <div className="projectCard">
       <img className="arrow" src={arrow} alt="arrow" />
       <h1>{props.title}</h1>
-      <p className="date">Release : 18-02-2024</p>
+      <p className="releaseDate">Release : {props.content.date}</p>
+      <p className="releaseDate">Level : {props.content.level}</p>
     </div>
   );
 }

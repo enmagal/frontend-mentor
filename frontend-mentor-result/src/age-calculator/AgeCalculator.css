@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Poppins_400Regular"; /*Can be any text*/
+  src: local("Poppins-Regular"),
+    url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --offWhite: hsl(0, 0%, 94%);
+  --lightgrey: hsl(0, 0%, 86%);
+  --smokeyGrey: hsl(0, 1%, 44%);
+  --offBlack: hsl(0, 0%, 8%);
+  --purple: hsl(259, 100%, 65%);
+  --lightRed: hsl(0, 100%, 67%);
+}
+
+.AgeCalculatorSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--offWhite);
+}
+
+.AgeCalculatorCard {
+  background-color: var(--white);
+  text-align: start;
+  width: fit-content;
+  padding: 2em;
+}
+
+.line {
+  width: 40vw;
+  height: 1.5px;
+  background-color: var(--lightgrey);
+}
+
+.validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ArrowButton {
+  height: 6em;
+  width: 6em;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--purple);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.ArrowButton:hover {
+  background-color: var(--offBlack);
+}
