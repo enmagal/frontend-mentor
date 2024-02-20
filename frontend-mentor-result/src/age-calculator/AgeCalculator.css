@@ -4,6 +4,18 @@
     url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins_700Bold"; /*Can be any text*/
+  src: local("Poppins-Bold"),
+    url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins_800ExtraBOld"; /*Can be any text*/
+  src: local("Poppins-ExtraBold"),
+    url("./assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
 :root {
   --white: hsl(0, 0%, 100%);
   --offWhite: hsl(0, 0%, 94%);
@@ -53,4 +65,38 @@
 
 .ArrowButton:hover {
   background-color: var(--offBlack);
+}
+
+.AgeCalculatorformText {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  margin-right: 2em;
+}
+
+.AgeCalculatorformText > label {
+  color: var(--offBlack);
+  text-transform: uppercase;
+  font-family: "Poppins_700Bold";
+  font-size: 14px;
+  color: var(--smokeyGrey);
+}
+
+.AgeCalculatorformText > input {
+  height: 35px;
+  padding: 14px 20px;
+  font-size: 28px;
+  font-family: "Poppins_700Bold";
+  border-radius: 10px;
+  border: 1px solid var(--lightgrey);
+  color: var(--smokeyGrey);
+  margin-top: 0.2em;
+}
+
+.AgeCalculatorformText > input:target-within {
+  border-color: red;
+}
+
+.AgeForm {
+  display: flex;
 }
