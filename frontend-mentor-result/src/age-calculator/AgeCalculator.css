@@ -11,9 +11,15 @@
 }
 
 @font-face {
-  font-family: "Poppins_800ExtraBOld"; /*Can be any text*/
+  font-family: "Poppins_800ExtraBold"; /*Can be any text*/
   src: local("Poppins-ExtraBold"),
     url("./assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins_800ExtraBoldI"; /*Can be any text*/
+  src: local("Poppins-ExtraBoldItalic"),
+    url("./assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
 }
 
 :root {
@@ -31,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--offWhite);
+  background-color: var(--lightgrey);
 }
 
 .AgeCalculatorCard {
@@ -99,4 +105,15 @@
 
 .AgeForm {
   display: flex;
+}
+
+.AgeCalculatorResult > h1 {
+  font-family: "Poppins_800ExtraBoldI";
+  font-size: 55px;
+  color: var(--offBlack);
+}
+
+.AgeCalculatorResult > h1 > em {
+  font-style: normal;
+  color: var(--purple);
 }
