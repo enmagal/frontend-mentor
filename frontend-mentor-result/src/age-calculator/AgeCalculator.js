@@ -17,21 +17,46 @@ function TextInput(props) {
   );
 }
 
-function calculateAge(birthDay, birthMonth, birthYear) {
-  const currentDate = new Date();
-  const birthDate = new Date(birthMonth + "/" + birthDay + "/" + birthYear);
-  const Anniversary = new Date(
-    birthMonth + "/" + birthDay + "/" + currentDate.getFullYear()
-  );
-  const day = 0;
-  const month = currentDate.getMonth() + 1;
-  var year = 0;
-  if (currentDate > Anniversary) {
-    year = currentDate.getFullYear() - birthDate.getFullYear();
-  } else {
-    year = currentDate.getFullYear() - birthDate.getFullYear() - 1;
+function calculerEcartEntreDates(birthDate) {
+  const currentDay = new Date();
+
+  // Convertir les dates en objets Date si elles ne le sont pas déjà
+  if (!(birthDate instanceof Date) || !(currentDay instanceof Date)) {
+    return "Les entrées ne sont pas valides. Assurez-vous d'entrer des objets Date.";
   }
-  return [day, month, year];
+
+  // Calculer la différence entre les années
+  var differenceAnnees = currentDay.getFullYear() - birthDate.getFullYear();
+
+  // Calculer la différence entre les mois
+  var differenceMois = currentDay.getMonth() - birthDate.getMonth();
+
+  // Calculer la différence entre les jours
+  var differenceJours = currentDay.getDate() - birthDate.getDate();
+
+  // Corriger la différence des mois si elle est négative
+  if (differenceMois < 0 || (differenceMois === 0 && differenceJours < 0)) {
+    differenceAnnees--;
+    differenceMois += differenceMois < 0 ? 12 : 0;
+  }
+
+  // Corriger la différence des jours si elle est négative
+  if (differenceJours < 0) {
+    var dernierJourMoisPrecedent = new Date(
+      currentDay.getFullYear(),
+      currentDay.getMonth(),
+      0
+    ).getDate();
+    differenceJours += dernierJourMoisPrecedent;
+    differenceMois--;
+  }
+
+  // Retourner l'écart en années, mois et jours
+  return {
+    annees: differenceAnnees,
+    mois: differenceMois,
+    jours: differenceJours,
+  };
 }
 
 function AgeCalculator(props) {
@@ -50,15 +75,12 @@ function AgeCalculator(props) {
   const handleChangeDay = (event) => {
     setBirthDay(event.target.value);
   };
+  const birthDate = new Date(birthMonth + "/" + birthDay + "/" + birthYear);
   const handleClick = () => {
-    const [daysNb, monthNb, yearNb] = calculateAge(
-      birthDay,
-      birthMonth,
-      birthYear
-    );
-    setDay(daysNb);
-    setMonth(monthNb);
-    setYear(yearNb);
+    const ecart = calculerEcartEntreDates(birthDate);
+    setDay(ecart.jours);
+    setMonth(ecart.mois);
+    setYear(ecart.annees);
   };
   return (
     <div className="AgeCalculatorSection">
