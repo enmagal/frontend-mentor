@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import "./App.css";
 import ProjectCards from "./components/ProjectCards";
 import FaqAccordion from "./faq-accordion/FaqAccordion";
@@ -28,9 +30,25 @@ const dataProjects = [
       level: "Newbie",
     },
   },
+  {
+    name: "Age calculator app",
+    content: {
+      date: "22-02-2024",
+      level: "Junior",
+    },
+  },
 ];
 
 function App() {
+  const projectsRef = useRef(null);
+  function handleScrollToProjects() {
+    projectsRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "center",
+    });
+  }
+
   return (
     <div className="App">
       <div className="linksBar">
@@ -44,18 +62,20 @@ function App() {
           <a
             target="_blank"
             rel="noreferrer"
-            className="button"
+            className="landingButton"
             href="https://bento.me/enzomagal"
           >
             See my Bento
           </a>
-          <a className="button" href="#Projects">
+          <button className="landingButton" onClick={handleScrollToProjects}>
             The projects
-          </a>
+          </button>
         </div>
       </header>
       <div className="projects">
-        <h2 id="Projects">Projects</h2>
+        <h2 id="Projects" ref={projectsRef}>
+          Projects
+        </h2>
         <div className="projectRow">
           {dataProjects &&
             dataProjects.map(({ name, content }) => (
