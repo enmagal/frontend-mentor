@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Inter"; /*Can be any text*/
+  src: local("Inter-VariableFont"),
+    url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+:root {
+  --softOrange: hsl(35, 77%, 62%);
+  --softRed: hsl(5, 85%, 63%);
+  --offWhite: hsl(36, 100%, 99%);
+  --grayishBlue: hsl(233, 8%, 79%);
+  --darkGrayishBlue: hsl(236, 13%, 42%);
+  --veryDarkBlue: hsl(240, 100%, 5%);
+  --weightRegular: 400;
+  --weightSemiBold: 700;
+  --weightBold: 800;
+}
+
+p {
+  color: var(--darkGrayishBlue);
+  font-size: 15px;
+  font-family: "Inter";
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: "Inter";
+  font-weight: 800;
+  text-align: start;
+  color: var(--veryDarkBlue);
+  margin-bottom: 0;
+}
+
+button {
+  background-color: var(--softRed);
+  border: none;
+  border-radius: none;
+  color: var(--offWhite);
+  text-transform: uppercase;
+  padding: 1em 2em;
+  font-family: "Inter";
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.newsHomepageContainer {
+  background-color: var(--offWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsHomepageColumn {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--veryDarkBlue);
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.navigation__links > a {
+  color: var(--darkGrayishBlue);
+  margin-left: 2em;
+  font-family: "Inter";
+  font-size: 17px;
+}
+
+.landing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleSpace {
+  width: 65%;
+}
+
+.titleSpace > img {
+  width: 100%;
+}
+
+.titleSpace__content {
+  display: flex;
+  padding-top: 1em;
+}
+
+.titleSpace__content > h1 {
+  width: 50%;
+}
+
+.titleSpace__content__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.news {
+  width: 32%;
+  background-color: var(--veryDarkBlue);
+  color: var(--offWhite);
+}
+
+.news > h2 {
+  color: var(--softOrange);
+  font-family: "Inter";
+  font-weight: 700;
+  text-align: start;
+  font-size: 32px;
+  padding-left: 25px;
+  margin-bottom: 0.5em;
+}
+
+.newsLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.newsLink > h3 {
+  color: var(--offWhite);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: "Inter";
+  font-weight: 700;
+  text-align: start;
+}
+
+.newsLink > p {
+  color: var(--grayishBlue);
+  margin: 0;
+  font-family: "Inter";
+}

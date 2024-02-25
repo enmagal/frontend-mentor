@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 import SocialLinks from "./SocialLinks";
 import ProjectCards from "./ProjectCards";
@@ -45,7 +46,9 @@ function Home(props) {
         <div className="projectRow">
           {dataProjects &&
             dataProjects.map(({ name, content }) => (
-              <ProjectCards key={name} title={name} content={content} />
+              <Link to={content.path}>
+                <ProjectCards key={name} title={name} content={content} />
+              </Link>
             ))}
         </div>
       </div>

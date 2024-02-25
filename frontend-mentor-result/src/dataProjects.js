@@ -4,6 +4,7 @@ export const dataProjects = [
     content: {
       date: "16-02-2024",
       level: "Newbie",
+      path: "/faqAccordion",
     },
   },
   {
@@ -11,6 +12,7 @@ export const dataProjects = [
     content: {
       date: "18-02-2024",
       level: "Junior",
+      path: "/newsletterSignUp",
     },
   },
   {
@@ -18,6 +20,7 @@ export const dataProjects = [
     content: {
       date: "18-02-2024",
       level: "Newbie",
+      path: "/blogPreviewCard",
     },
   },
   {
@@ -25,6 +28,15 @@ export const dataProjects = [
     content: {
       date: "22-02-2024",
       level: "Junior",
+      path: "/ageCalculator",
+    },
+  },
+  {
+    name: "News homepage",
+    content: {
+      date: "25-02-2024",
+      level: "Junior",
+      path: "/newsHomepage",
     },
   },
 ];

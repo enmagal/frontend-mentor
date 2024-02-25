@@ -7,6 +7,7 @@ import FaqAccordion from "./faq-accordion/FaqAccordion";
 import NewsletterSignUp from "./newsletter-sign-up/NewsletterSignUp";
 import BlogPreviewCard from "./blog-preview-card/BlogPreviewCard";
 import AgeCalculator from "./age-calculator/AgeCalculator.js";
+import NewsHomepage from "./news-homepage/NewsHomepage.js";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/newsletterSignUp" element={<NewsletterSignUp />} />
           <Route path="/blogPreviewCard" element={<BlogPreviewCard />} />
           <Route path="/ageCalculator" element={<AgeCalculator />} />
+          <Route path="/newsHomepage" element={<NewsHomepage />} />
         </Routes>
       </Router>
     </div>
