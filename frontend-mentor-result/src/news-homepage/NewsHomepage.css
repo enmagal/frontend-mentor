@@ -144,3 +144,41 @@ button {
   margin: 0;
   font-family: "Inter";
 }
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.articleLink {
+  display: flex;
+  width: 33%;
+  height: max-content;
+  background-color: blue;
+}
+
+.articleLink__image {
+  max-width: 33%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.articleLink__text {
+  background-color: red;
+  width: 66%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.articleLink__text > h3 {
+  margin: 0;
+}
+
+.articleLink__text > h4 {
+  margin: 0;
+}

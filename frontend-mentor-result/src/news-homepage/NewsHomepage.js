@@ -5,6 +5,9 @@ import { articlesData, navigationData, newsData } from "./NewsHomepageData";
 
 import { ReactComponent as ReactLogo } from "./assets/images/logo.svg";
 import image_web from "./assets/images/image-web-3-desktop.jpg";
+import retroPcs from "./assets/images/image-retro-pcs.jpg";
+import topLaptops from "./assets/images/image-top-laptops.jpg";
+import gamingGrowth from "./assets/images/image-gaming-growth.jpg";
 
 function NewsLink(props) {
   return (
@@ -12,6 +15,23 @@ function NewsLink(props) {
       <h3>{props.name}</h3>
       <p>{props.content}</p>
     </a>
+  );
+}
+
+function Article(props) {
+  return (
+    <div className="articleLink">
+      <img
+        className="articleLink__image"
+        src={retroPcs}
+        alt={props.content.image}
+      />
+      <div className="articleLink__text">
+        <h3>{props.name}</h3>
+        <h4>{props.content.title}</h4>
+        <p>{props.content.text}</p>
+      </div>
+    </div>
   );
 }
 
@@ -53,9 +73,7 @@ function NewsHomepage(props) {
         </div>
         <div className="articles">
           {articlesData.map(({ name, content }) => (
-            <p href="#" key={name}>
-              {content.text}
-            </p>
+            <Article name={name} content={content} />
           ))}
         </div>
       </div>
