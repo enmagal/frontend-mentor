@@ -31,7 +31,7 @@ h1 {
   margin-bottom: 0;
 }
 
-button {
+.titleSpace__content__text > button {
   background-color: var(--softRed);
   border: none;
   border-radius: none;
@@ -52,7 +52,7 @@ button {
 }
 
 .newsHomepageColumn {
-  width: 80%;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,7 +156,6 @@ button {
   display: flex;
   width: 33%;
   height: max-content;
-  background-color: blue;
 }
 
 .articleLink__image {
@@ -166,9 +165,7 @@ button {
 }
 
 .articleLink__text {
-  background-color: red;
   width: 66%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -177,8 +174,21 @@ button {
 
 .articleLink__text > h3 {
   margin: 0;
+  padding-left: 30px;
+  font-family: "Inter";
+  font-weight: 800;
+  color: var(--grayishBlue);
+  font-size: 50px;
 }
 
 .articleLink__text > h4 {
   margin: 0;
+  padding-left: 30px;
+  font-family: "Inter";
+}
+
+.articleLink__text > p {
+  margin: 0;
+  padding-left: 30px;
+  font-family: "Inter";
 }

@@ -109,6 +109,8 @@
   animation: rainbow-animation 90s linear infinite;
 }
 
+/* PROJECT CARD */
+
 .projectCard {
   width: 20vw;
   height: 50vh;
@@ -123,8 +125,8 @@
   transition-duration: 0.3s;
   background-position: center;
   background-size: cover;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 2vw;
+  margin-right: 2vw;
   margin-bottom: 3em;
   margin-top: 3em;
   color: #fff;
