@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./NewsHomepage.css";
 
 import { articlesData, navigationData, newsData } from "./NewsHomepageData";
@@ -67,7 +67,10 @@ function NewsHomepage(props) {
           <div className="news">
             <h2>New</h2>
             {newsData.map(({ name, content }) => (
-              <NewsLink key={name} name={name} content={content} />
+              <Fragment key={name}>
+                {name !== "Hydrogen VS Electric Cars" && <hr />}
+                <NewsLink key={name} name={name} content={content} />
+              </Fragment>
             ))}
           </div>
         </div>
