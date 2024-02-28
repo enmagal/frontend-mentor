@@ -5,6 +5,7 @@ import { articlesData, navigationData, newsData } from "./NewsHomepageData";
 
 import { ReactComponent as ReactLogo } from "./assets/images/logo.svg";
 import image_web from "./assets/images/image-web-3-desktop.jpg";
+import ProjectNav from "../components/ProjectNav";
 
 function NewsLink(props) {
   return (
@@ -35,6 +36,7 @@ function Article(props) {
 function NewsHomepage(props) {
   return (
     <div className="newsHomepageContainer">
+      <ProjectNav projectLink="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" />
       <div className="newsHomepageColumn">
         <div className="navigation">
           <ReactLogo />

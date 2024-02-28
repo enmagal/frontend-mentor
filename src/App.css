@@ -241,3 +241,43 @@ a:link {
   justify-content: flex-end;
   padding: 1em;
 }
+
+/* PROJECT NAV */
+
+.ProjectNav {
+  position: fixed;
+  left: 3%;
+  top: 50%;
+  transform: translatey(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.ProjectNav > a > * {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+.ProjectNav > a {
+  border: 3px solid #fff;
+  background-color: #0c0f0a;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition-duration: 0.3s;
+}
+
+.ProjectNav > a:hover {
+  border-image: conic-gradient(
+      from var(--angle),
+      #ff206e,
+      #fbff12,
+      #41ead4,
+      #ff206e
+    )
+    1;
+  animation: 5s rotate linear infinite;
+  box-shadow: 0 0;
+  translate: 20px 0px;
+}

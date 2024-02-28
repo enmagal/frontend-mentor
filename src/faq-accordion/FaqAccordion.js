@@ -3,6 +3,7 @@ import "./FaqAccordion.css";
 import { ReactComponent as ReactStar } from "./assets/images/icon-star.svg";
 import { ReactComponent as ReactPlus } from "./assets/images/icon-plus.svg";
 import { ReactComponent as ReactMinus } from "./assets/images/icon-minus.svg";
+import ProjectNav from "../components/ProjectNav";
 
 const data = [
   {
@@ -66,6 +67,7 @@ function FaqAccordion(props) {
 
   return (
     <div className="faqAccordionSection">
+      <ProjectNav projectLink="#" />
       <div className="faqAccordion">
         <div className="title">
           <ReactStar />

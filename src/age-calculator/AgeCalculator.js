@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./AgeCalculator.css";
 import { ReactComponent as ReactArrow } from "./assets/images/icon-arrow.svg";
+import ProjectNav from "../components/ProjectNav";
 
 function TextInput(props) {
   return (
@@ -84,6 +85,7 @@ function AgeCalculator(props) {
   };
   return (
     <div className="AgeCalculatorSection">
+      <ProjectNav projectLink="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" />
       <div className="AgeCalculatorCard">
         <div className="AgeForm">
           <TextInput name="day" placeholder="DD" onChange={handleChangeDay} />

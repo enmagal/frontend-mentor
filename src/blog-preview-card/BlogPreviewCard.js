@@ -2,6 +2,7 @@ import React from "react";
 import "./BlogPreviewCard.css";
 import { ReactComponent as ReactIllustration } from "./assets/images/illustration-article.svg";
 import avatar from "./assets/images/image-avatar.webp";
+import ProjectNav from "../components/ProjectNav";
 
 function Label(props) {
   return (
@@ -23,6 +24,7 @@ function Author(props) {
 function BlogPreviewCard(props) {
   return (
     <div className="BlogPreviewSection">
+      <ProjectNav projectLink="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" />
       <div className="BlogCard">
         <div className="illustrationContainer">
           <ReactIllustration />

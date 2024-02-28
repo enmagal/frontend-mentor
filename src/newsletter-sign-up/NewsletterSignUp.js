@@ -3,6 +3,7 @@ import "./NewsletterSignUp.css";
 import { ReactComponent as ReactList } from "./assets/images/icon-list.svg";
 import { ReactComponent as ReactIllustrationDesktop } from "./assets/images/illustration-sign-up-desktop.svg";
 import { ReactComponent as ReactSuccess } from "./assets/images/icon-success.svg";
+import ProjectNav from "../components/ProjectNav";
 
 const data = [
   {
@@ -143,6 +144,7 @@ function NewsletterSignUp(props) {
   if (!submit) {
     return (
       <div className="newsletterSection">
+        <ProjectNav projectLink="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" />
         <NewsletterForm
           onClick={handleClick}
           onChange={handleChange}
@@ -153,6 +155,7 @@ function NewsletterSignUp(props) {
   }
   return (
     <div className="newsletterSection">
+      <ProjectNav projectLink="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" />
       <Success onClick={handleClick} email={email} />
     </div>
   );
