@@ -5,9 +5,6 @@ import { articlesData, navigationData, newsData } from "./NewsHomepageData";
 
 import { ReactComponent as ReactLogo } from "./assets/images/logo.svg";
 import image_web from "./assets/images/image-web-3-desktop.jpg";
-import retroPcs from "./assets/images/image-retro-pcs.jpg";
-import topLaptops from "./assets/images/image-top-laptops.jpg";
-import gamingGrowth from "./assets/images/image-gaming-growth.jpg";
 
 function NewsLink(props) {
   return (
@@ -23,8 +20,8 @@ function Article(props) {
     <div className="articleLink">
       <img
         className="articleLink__image"
-        src={retroPcs}
-        alt={props.content.image}
+        src={props.content.image}
+        alt={props.name}
       />
       <div className="articleLink__text">
         <h3>{props.name}</h3>

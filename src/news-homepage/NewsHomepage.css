@@ -18,7 +18,7 @@
 
 p {
   color: var(--darkGrayishBlue);
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Inter";
   line-height: 1.5em;
 }
@@ -42,6 +42,11 @@ h1 {
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.titleSpace__content__text > button:hover {
+  background-color: var(--veryDarkBlue);
 }
 
 .newsHomepageContainer {
@@ -73,6 +78,11 @@ h1 {
   margin-left: 2em;
   font-family: "Inter";
   font-size: 17px;
+  transition-duration: 0.2s;
+}
+
+.navigation__links > a:hover {
+  color: var(--softRed);
 }
 
 .landing {
@@ -137,6 +147,11 @@ h1 {
   font-family: "Inter";
   font-weight: 700;
   text-align: start;
+  transition-duration: 0.2s;
+}
+
+.newsLink:hover > h3 {
+  color: var(--softOrange);
 }
 
 .newsLink > p {
@@ -176,15 +191,23 @@ h1 {
   margin: 0;
   padding-left: 30px;
   font-family: "Inter";
-  font-weight: 800;
+  font-weight: 700;
   color: var(--grayishBlue);
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .articleLink__text > h4 {
   margin: 0;
   padding-left: 30px;
   font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.articleLink__text > h4:hover {
+  color: var(--softRed);
 }
 
 .articleLink__text > p {
@@ -194,9 +217,9 @@ h1 {
 }
 
 hr {
-  border: 1px solid var(--darkGrayishBlue);
+  border: 0.5px solid var(--darkGrayishBlue);
   border-radius: 100px;
   width: 85%;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
